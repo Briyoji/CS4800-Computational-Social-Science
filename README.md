@@ -35,7 +35,7 @@ This repository contains the code, report, figures, and documentation associated
 ---
 
 ## 📂 Repository Structure  
-'''
+```
 Menopause-Reddit-Analysis/
 │
 ├── data/
@@ -71,7 +71,7 @@ Menopause-Reddit-Analysis/
 │
 ├── README.md
 └── requirements.txt
-'''
+```
 ---
 
 ## 🧼 Data Preprocessing Pipeline  
