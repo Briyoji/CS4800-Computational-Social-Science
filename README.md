@@ -1,47 +1,40 @@
 # CS4800-Computational-Social-Science
 
+# 🩺 Understanding Menopause on Reddit Using NLP  
+### *A Computational Analysis of Themes & Sentiments in Menopause-Related Discussions*
 
-🩺 Understanding Menopause on Reddit Using NLP
-A Computational Analysis of Themes & Sentiments in Menopause-Related Discussions
-📌 Overview
+---
 
-This project applies Natural Language Processing (NLP) methods to understand how people discuss menopause and perimenopause on Reddit. Using a pipeline involving data scraping, preprocessing, topic modeling (LDA), and sentiment analysis (VADER), the study uncovers dominant themes, emotional patterns, and unmet support needs expressed by users across menopause-related communities.
+## 📌 Overview  
+This project applies **Natural Language Processing (NLP)** methods to understand how people discuss **menopause and perimenopause** on Reddit. Using a pipeline involving **data scraping, preprocessing, topic modeling (LDA), and sentiment analysis (VADER)**, the study uncovers dominant themes, emotional patterns, and unmet support needs expressed by users across menopause-related communities.
 
 This repository contains the code, report, figures, and documentation associated with the project.
 
-🚀 Key Objectives
+---
 
-Collect and preprocess Reddit posts from menopause-related subreddits
+## 🚀 Key Objectives  
+- Collect and preprocess Reddit posts from menopause-related subreddits  
+- Identify high-level themes using **Latent Dirichlet Allocation (LDA)**  
+- Analyze emotional tone using **VADER sentiment analysis**  
+- Visualize topic–sentiment interactions  
+- Draw insights applicable to healthcare communication, digital health tools, and support systems  
 
-Identify high-level themes using Latent Dirichlet Allocation (LDA)
+---
 
-Analyze emotional tone using VADER sentiment analysis
+## 🛠️ Tech Stack  
+- **Python 3.10+**  
+- Libraries:
+  - `praw` or `psaw` (Reddit scraping)
+  - `pandas`, `numpy`
+  - `spaCy`, `nltk`
+  - `gensim` (LDA)
+  - `matplotlib`, `seaborn`, `wordcloud`
+  - `vaderSentiment`
+  - `pyLDAvis`
 
-Visualize topic–sentiment interactions
+---
 
-Draw insights applicable to healthcare communication, digital health tools, and support systems
-
-🛠️ Tech Stack
-
-Python 3.10+
-
-Libraries:
-
-praw or psaw (Reddit scraping)
-
-pandas, numpy
-
-spaCy, nltk
-
-gensim (LDA)
-
-matplotlib, seaborn, wordcloud
-
-vaderSentiment
-
-pyLDAvis for topic visualization
-
-📂 Repository Structure
+## 📂 Repository Structure  
 Menopause-Reddit-Analysis/
 │
 ├── data/
@@ -78,105 +71,84 @@ Menopause-Reddit-Analysis/
 ├── README.md
 └── requirements.txt
 
-🧼 Data Preprocessing Pipeline
 
+---
+
+## 🧼 Data Preprocessing Pipeline  
 Key steps:
 
-PII Removal
+1. **PII Removal**  
+2. **Noise Cleaning (emojis, URLs, punctuation)**  
+3. **Tokenization & Stopword Removal**  
+4. **Lemmatization (spaCy)**  
+5. **Short-text Filtering**  
+6. **Vectorization for LDA (Gensim Dictionary + BoW)**  
 
-Emails, usernames, URLs, phone numbers removed
+---
 
-Text Cleaning
+## 🔍 Topic Modeling (LDA)  
+- Explored **K = 5–10 topics**  
+- Selected **K = 7** using coherence score maximization  
+- Final topics:
 
-Lowercasing, emoji removal, punctuation normalization
+| ID | Theme | Description |
+|----|--------|-------------|
+| 1 | Cycle & Hormonal Adjustments | Menstrual irregularity, HRT, hot flashes |
+| 2 | Doctor Consultations & HRT | Medical advice, estrogen, progesterone |
+| 3 | Life Reflections | Mood changes, self-perception, aging |
+| 4 | Sleep & Hot Flash Issues | Night sweats, insomnia |
+| 5 | Anxiety & Pain | Emotional distress, chronic pain |
+| 6 | Medical Research | Breast cancer risk, studies |
+| 7 | Intimacy & Relationships | Sexual health, communication |
 
-Tokenization & Stopword Removal
+---
 
-Lemmatization using spaCy
+## 😊 Sentiment Analysis (VADER)  
+Posts classified into **positive, neutral, and negative** categories.
 
-Length Filtering for noise reduction
+### Key insights:
+- **Highest negative sentiment:** Anxiety & Pain  
+- Sleep & Hot Flashes → predominantly negative  
+- Doctor Consultations & Medical Research → more neutral/positive  
+- Intimacy & Relationship posts → mixed sentiment  
 
-Vectorization using Gensim dictionary + BoW
+---
 
-This produces a clean corpus ideal for topic modeling.
+## 📊 Visualizations  
+- Coherence Score Plot  
+- LDA Word Clouds  
+- pyLDAvis Intertopic Map  
+- Sentiment Distribution Charts  
+- Topic–Sentiment Stacked Bars  
 
-🔍 Topic Modeling (LDA)
+All visual outputs are located in the `results/figures/` folder.
 
-Tried K = 5 to 10 topics
+---
 
-Selected K = 7 using coherence score maximization
+## 🎯 Key Insights  
+- Reddit is a significant platform for menopause discussions  
+- Users show **high emotional burden** (anxiety, pain, sleep issues)  
+- Discussions about **HRT and clinicians** tend to be hopeful  
+- Need for **better clinical communication and digital health tools**  
+- Social media analysis provides **real-time, large-scale patient perspectives**  
 
-Final topics identified:
+---
 
-ID	Theme	Description
-1	Cycle & Hormonal Adjustments	Menstrual irregularity, HRT, hot flashes
-2	Doctor Consultations & HRT	Medical advice, estrogen, progesterone
-3	Life Reflections	Mood changes, self-perception, aging
-4	Sleep & Hot Flash Issues	Night sweats, insomnia
-5	Anxiety & Pain	Emotional distress, chronic pain
-6	Medical Research	Breast cancer risk, studies
-7	Intimacy & Relationships	Sexual health, communication
+## 📌 Future Improvements  
+- Use BERT/RoBERTa for advanced sentiment & emotion detection  
+- Multi-label emotion classification  
+- Temporal trend analysis  
+- Expand across platforms (Twitter, Facebook)  
+- Develop a monitoring dashboard  
 
-Visualizations include word clouds and a pyLDAvis intertopic map.
+---
 
-😊 Sentiment Analysis (VADER)
+## 📄 License  
+This project is intended for academic and research use.  
+Please follow Reddit’s policies for handling scraped data.
 
-Posts are classified into:
+---
 
-Positive
+## ⭐ If you find this useful  
+Please consider giving the repository a **star** 🌟 or citing the report.
 
-Neutral
-
-Negative
-
-Key findings:
-
-Anxiety & Pain → highest negative sentiment
-
-Sleep/Hot Flashes → predominantly negative
-
-Doctor Consultations & Medical Research → more neutral/positive
-
-Intimacy → mixed emotional tone
-
-Charts include sentiment distribution per topic and overall emotional patterns.
-
-📊 Visualizations
-
-The project generates:
-
-Coherence Score Plot
-
-Topic Word Clouds
-
-LDA Intertopic Map (pyLDAvis)
-
-Sentiment Distribution Bar Charts
-
-Topic–Sentiment Stacked Bars
-
-All figures are stored in the results/figures/ directory.
-
-🎯 Key Insights
-
-Reddit serves as a major platform for menopause-related support
-
-Users express high emotional burden (anxiety, pain, sleep issues)
-
-Conversations around HRT and doctor visits are more hopeful
-
-There is a need for better digital health tools and clinical communication
-
-Social media analysis provides real-time public-health perspective
-
-📌 Future Improvements
-
-Introduce transformer-based models (BERT, RoBERTa)
-
-Implement multi-label emotion classification
-
-Temporal analysis of symptom progression
-
-Expand dataset scope across other platforms (Twitter, Facebook groups)
-
-Build a dashboard for real-time monitoring
