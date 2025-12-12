@@ -161,8 +161,3 @@ This project is intended for academic and research use.
 Please follow Reddit’s policies for handling scraped data.
 
 ---
-
-## ⭐ If you find this useful  
-Please consider giving the repository a **star** 🌟 or citing the report.
-
->>>>>>> 29fdd3ebc3e6bd90d6a781caa2f75be923629858
