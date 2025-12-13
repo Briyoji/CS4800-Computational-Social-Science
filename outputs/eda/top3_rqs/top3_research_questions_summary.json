@@ -1,0 +1,32 @@
+{
+  "rq1": {
+    "answer": "**RQ1: Which topics have gained or lost prominence in menopause discussions over time, and how do these shifts relate to changing public health priorities or community needs?**\n\nBased on comprehensive temporal analysis of topic prevalence:\n\n**Top Gaining Topics**: Topic 0 (+10.5%), Topic 6 (+10.4%), Topic 4 (+7.2%)\n\n**Top Losing Topics**: Topic 2 (-4.1%), Topic 1 (-6.1%), Topic 7 (-26.5%)\n\n**Key Findings**:\n\u2022 The topic prevalence timeline (stacked area chart) reveals significant shifts in discussion focus over time.\n\u2022 Some topics show steady growth, potentially reflecting increased awareness, treatment access, or emerging concerns.\n\u2022 Declining topics may indicate resolved issues, shifting priorities, or information saturation.\n\u2022 These patterns align with evolving public health priorities and community needs.\n\n**Supporting Visualizations**:\n1. `rq1_topic_prevalence_timeline.png` - Shows monthly topic distribution over time\n2. `rq1_topic_gains_losses.png` - Highlights top gaining and losing topics\n3. `topic_prevalence_over_time.png` (existing) - Comprehensive temporal view\n4. `topic_sentiment_heatmap_bert.png` & `topic_sentiment_heatmap_vader.png` - Show current sentiment by topic\n",
+    "visualizations": [
+      "rq1_topic_prevalence_timeline.png",
+      "rq1_topic_gains_losses.png",
+      "topic_prevalence_over_time.png",
+      "topic_sentiment_heatmap_bert.png",
+      "topic_sentiment_heatmap_vader.png"
+    ]
+  },
+  "rq2": {
+    "answer": "**RQ2: How does the sentiment of a post affect the sentiment of its comments?**\n\nBased on correlation analysis between post sentiment and average comment sentiment:\n\n**BERT Analysis**:\n\u2022 Correlation coefficient: r = 0.426\n\u2022 Statistical significance: p = 0.0000\n\u2022 There is a moderate positive correlation, indicating that posts with more positive sentiment tend to receive comments with more positive sentiment (and vice versa).\n\n**VADER Analysis**:\n\u2022 Correlation coefficient: r = 0.287\n\u2022 Statistical significance: p = 0.0001\n\n**Key Findings**:\n\u2022 The scatter plots show the relationship between post sentiment scores and average comment sentiment scores.\n\u2022 The sentiment alignment matrix reveals how often comment sentiment matches post sentiment.\n\u2022 Positive posts tend to attract supportive comments, while negative posts may receive empathetic or problem-solving responses.\n\u2022 This suggests the Reddit community exhibits emotional contagion or supportive response patterns.\n\n**Supporting Visualizations**:\n1. `rq2_post_comment_bert_scatter.png` - Scatter plot with regression line (BERT)\n2. `rq2_post_comment_vader_scatter.png` - Scatter plot with regression line (VADER)\n3. `rq2_sentiment_alignment_matrix.png` - Shows alignment between post and comment sentiment categories\n4. `sentiment_over_time_bert.png` & `sentiment_over_time_vader.png` (existing) - Context for overall sentiment trends\n",
+    "visualizations": [
+      "rq2_post_comment_bert_scatter.png",
+      "rq2_post_comment_vader_scatter.png",
+      "rq2_sentiment_alignment_matrix.png",
+      "sentiment_over_time_bert.png",
+      "sentiment_over_time_vader.png"
+    ]
+  },
+  "rq3": {
+    "answer": "**RQ3: Which topics and subtopics show the highest negative sentiment, and what does this reveal about areas requiring urgent intervention or support?**\n\nBased on comprehensive analysis of negative sentiment across topics and subtopics:\n\n**Top Negative Topics (BERT)**:\n1. Topic 2: 52.4% negative (23,526 posts/comments)\n2. Topic 6: 41.1% negative (16,819 posts/comments)\n3. Topic 7: 40.8% negative (33,757 posts/comments)\n4. Topic 1: 40.7% negative (22,824 posts/comments)\n5. Topic 4: 34.7% negative (17,489 posts/comments)\n\n**Top Negative Subtopics (BERT)**:\n1. Topic 0 - Subtopic 1: 56.7% negative (4,155 posts/comments)\n2. Topic 2 - Subtopic 1: 56.3% negative (3,788 posts/comments)\n3. Topic 2 - Subtopic 2: 56.0% negative (2,911 posts/comments)\n4. Topic 2 - Subtopic 6: 54.7% negative (3,441 posts/comments)\n5. Topic 2 - Subtopic 0: 53.0% negative (3,269 posts/comments)\n\n**Context**: Average negative sentiment across all topics is 34.6%. Topics/subtopics significantly above this average represent high-priority areas for intervention.\n\n**Key Findings**:\n\u2022 Certain topics consistently show high negative sentiment, indicating persistent challenges or unmet needs.\n\u2022 Subtopic analysis reveals granular pain points that may be masked at the topic level.\n\u2022 BERT and VADER show agreement on the most problematic topics, validating the findings.\n\u2022 These high-risk areas should be prioritized for support resources, clinical attention, and community interventions.\n\n**Supporting Visualizations**:\n1. `rq3_top_negative_topics_bert.png` - Bar chart of top 5 most negative topics\n2. `rq3_top_negative_subtopics_bert.png` - Bar chart of top 8 most negative subtopics\n3. `rq3_model_comparison_heatmap.png` - BERT vs VADER comparison for validation\n4. `topic_sentiment_heatmap_bert.png` & `subtopic_sentiment_heatmap_bert.png` (existing) - Comprehensive sentiment distribution\n",
+    "visualizations": [
+      "rq3_top_negative_topics_bert.png",
+      "rq3_top_negative_subtopics_bert.png",
+      "rq3_model_comparison_heatmap.png",
+      "topic_sentiment_heatmap_bert.png",
+      "subtopic_sentiment_heatmap_bert.png"
+    ]
+  }
+}

@@ -1,9 +1,3 @@
-# Top 3 Research Questions: Complete Analysis with Answers
-
-This document presents the three most important research questions for the Menopause Reddit analysis, each supported by multiple visualizations and data-driven answers.
-
----
-
 ## Research Question 1: Topic Prevalence Over Time
 
 **Question**: Which topics have gained or lost prominence in menopause discussions over time, and how do these shifts relate to changing public health priorities or community needs?
@@ -169,8 +163,4 @@ Based on these findings:
 - **For Policymakers**: Prioritize resources for topics showing high negative sentiment and large discussion volumes, particularly Topic 7.
 
 ---
-
-**All visualizations and supporting data are available in `outputs/eda/top3_rqs/`**
-
-**Generated on**: Analysis completed with data from 2020-2025, covering 167,150+ posts and comments.
 
