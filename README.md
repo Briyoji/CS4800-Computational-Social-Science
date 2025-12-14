@@ -163,9 +163,12 @@ We performed comprehensive EDA including:
 - The substantial decline in Topic 7 (-26.5%) suggests either successful intervention or topic normalization
 
 **Supporting Visualizations**:
-- `rq1_topic_prevalence_timeline.png` - Monthly stacked area chart showing topic proportions over time
-- `rq1_topic_gains_losses.png` - Bar charts highlighting top gaining and losing topics
-- `topic_prevalence_over_time.png` - Comprehensive temporal view of all topics
+<img width="1787" height="880" alt="rq1_topic_prevalence_timeline" src="https://github.com/user-attachments/assets/3ce6b188-81fb-47e4-836b-700e0ce0223a" />
+
+<img width="2100" height="750" alt="rq1_topic_gains_losses" src="https://github.com/user-attachments/assets/dda8c4bc-6615-4212-b85c-982dd5359739" />
+
+<img width="1500" height="750" alt="topic_prevalence_over_time" src="https://github.com/user-attachments/assets/6b7b21a4-4593-46ba-a4db-c202c48c05a0" />
+
 
 ### C. RQ2 — Post–Comment Sentiment Relationship
 
@@ -194,9 +197,10 @@ We performed comprehensive EDA including:
 - Negative posts, while receiving support, may benefit from early positive intervention
 
 **Supporting Visualizations**:
-- `rq2_post_comment_bert_scatter.png` - Scatter plot with regression line (BERT)
-- `rq2_post_comment_vader_scatter.png` - Scatter plot with regression line (VADER)
-- `rq2_sentiment_alignment_matrix.png` - Heatmap showing sentiment category alignment
+<img width="1200" height="900" alt="rq2_post_comment_bert_scatter" src="https://github.com/user-attachments/assets/64be2170-fb8a-4986-9fde-7b9b92f603d7" />
+<img width="1200" height="900" alt="rq2_post_comment_vader_scatter" src="https://github.com/user-attachments/assets/cf3695e8-017f-4c2d-b140-695ba92ef819" />
+<img width="1200" height="900" alt="rq2_sentiment_alignment_matrix" src="https://github.com/user-attachments/assets/0604066b-74ae-4ec1-a544-d5b2680c7a94" />
+
 
 ### D. RQ3 — High-Risk Topics and Subtopics
 
@@ -230,10 +234,12 @@ We performed comprehensive EDA including:
 **Model Validation**: BERT and VADER show agreement on the most problematic topics (both identify Topic 2 as highly negative), validating the findings. However, BERT shows higher negative percentages overall, likely due to better capture of nuanced negative emotions.
 
 **Supporting Visualizations**:
-- `rq3_top_negative_topics_bert.png` - Bar chart of top 5 most negative topics
-- `rq3_top_negative_subtopics_bert.png` - Bar chart of top 8 most negative subtopics
-- `rq3_model_comparison_heatmap.png` - BERT vs VADER comparison for validation
-- `topic_sentiment_heatmap_bert.png` & `subtopic_sentiment_heatmap_bert.png` - Comprehensive sentiment distribution matrices
+<img width="1500" height="900" alt="rq3_top_negative_topics_bert" src="https://github.com/user-attachments/assets/19681361-93f1-4b3d-ab45-2cf3628e5461" />
+
+<img width="1500" height="900" alt="rq3_top_negative_subtopics_bert" src="https://github.com/user-attachments/assets/41dc4a25-6ac0-4f89-a9a0-2936457de46f" />
+<img width="1200" height="900" alt="rq3_model_comparison_heatmap" src="https://github.com/user-attachments/assets/2cdb47dd-038f-4b50-bb08-d34a8ed421b8" />
+<img width="1050" height="675" alt="topic_sentiment_heatmap_bert" src="https://github.com/user-attachments/assets/2fe1a4dc-78ae-4e74-a418-fc145e754709" />
+<img width="1050" height="600" alt="subtopic_sentiment_heatmap_bert" src="https://github.com/user-attachments/assets/7f0f7b4c-7911-4f5b-8fe5-4e2b969f7555" />
 
 ### E. Additional EDA Findings
 
