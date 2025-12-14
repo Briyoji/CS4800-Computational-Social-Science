@@ -363,9 +363,9 @@ The computational approach demonstrated here can be adapted for other health con
 
 ---
 
-## Acknowledgments
+## Ethical Note
 
-We thank our supervisors VijayaChitra Modhukur and Rajesh Sharma for their guidance. The project followed ethical scraping and anonymization guidelines, with all personal identifiers removed before analysis.
+The project followed ethical scraping and anonymization guidelines, with all personal identifiers removed before analysis.
 
 ---
 
